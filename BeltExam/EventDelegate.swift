@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol EventDelegate: class {
+    func itemSaved(by controller: AddEventViewController, with text: String, with info: String, and date: Date, and index: IndexPath?)
+    func itemCancle(by controller: AddEventViewController)
+}

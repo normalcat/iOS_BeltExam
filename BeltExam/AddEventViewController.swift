@@ -10,10 +10,24 @@ import UIKit
 
 class AddEventViewController: UIViewController {
 
+    weak var delegate: EventDelegate?
+    
+    @IBOutlet weak var timePicker: UIDatePicker!
+    @IBOutlet weak var infoText: UITextField!
+    @IBOutlet weak var titleText: UITextField!
+    
+    var timeDate: Date?
+    var infoString: String?
+    var titleString: String?
+    var index: IndexPath?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if infoString != nil{
+            infoText.text = infoString
+            titleText.text = titleString
+            timePicker.setDate(timeDate!, animated: true)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +35,11 @@ class AddEventViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func cancleButtonPressed(_ sender: UIButton) {
+        delegate?.itemCancle(by: self)
     }
-    */
-
+    
+    @IBAction func saveButtonPressed(_ sender: UIButton) {
+        delegate?.itemSaved(by: self, with: titleText.text!, with: infoText.text!, and: timePicker.date, and: index)
+    }
 }

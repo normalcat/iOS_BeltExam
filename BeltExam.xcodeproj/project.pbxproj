@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		8D5BE60F201CEBC400B404A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BE60E201CEBC400B404A2 /* AppDelegate.swift */; };
-		8D5BE611201CEBC400B404A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BE610201CEBC400B404A2 /* ViewController.swift */; };
+		8D5BE611201CEBC400B404A2 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BE610201CEBC400B404A2 /* EventTableViewController.swift */; };
 		8D5BE614201CEBC400B404A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D5BE612201CEBC400B404A2 /* Main.storyboard */; };
 		8D5BE617201CEBC400B404A2 /* BeltExam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BE615201CEBC400B404A2 /* BeltExam.xcdatamodeld */; };
 		8D5BE619201CEBC400B404A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D5BE618201CEBC400B404A2 /* Assets.xcassets */; };
 		8D5BE61C201CEBC400B404A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D5BE61A201CEBC400B404A2 /* LaunchScreen.storyboard */; };
 		8D5BE627201CEBC400B404A2 /* BeltExamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BE626201CEBC400B404A2 /* BeltExamTests.swift */; };
 		8D5BE632201CEBC400B404A2 /* BeltExamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BE631201CEBC400B404A2 /* BeltExamUITests.swift */; };
+		8D5BE642201CEF4F00B404A2 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BE641201CEF4F00B404A2 /* AddEventViewController.swift */; };
+		8D5BE644201CF36300B404A2 /* EventDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BE643201CF36300B404A2 /* EventDelegate.swift */; };
+		8D5BE646201D08CA00B404A2 /* MyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BE645201D08CA00B404A2 /* MyEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,7 @@
 /* Begin PBXFileReference section */
 		8D5BE60B201CEBC400B404A2 /* BeltExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeltExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5BE60E201CEBC400B404A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D5BE610201CEBC400B404A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D5BE610201CEBC400B404A2 /* EventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
 		8D5BE613201CEBC400B404A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D5BE616201CEBC400B404A2 /* BeltExam.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeltExam.xcdatamodel; sourceTree = "<group>"; };
 		8D5BE618201CEBC400B404A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		8D5BE62D201CEBC400B404A2 /* BeltExamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeltExamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5BE631201CEBC400B404A2 /* BeltExamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeltExamUITests.swift; sourceTree = "<group>"; };
 		8D5BE633201CEBC400B404A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D5BE641201CEF4F00B404A2 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		8D5BE643201CF36300B404A2 /* EventDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDelegate.swift; sourceTree = "<group>"; };
+		8D5BE645201D08CA00B404A2 /* MyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,12 @@
 		8D5BE60D201CEBC400B404A2 /* BeltExam */ = {
 			isa = PBXGroup;
 			children = (
+				8D5BE641201CEF4F00B404A2 /* AddEventViewController.swift */,
 				8D5BE60E201CEBC400B404A2 /* AppDelegate.swift */,
-				8D5BE610201CEBC400B404A2 /* ViewController.swift */,
+				8D5BE610201CEBC400B404A2 /* EventTableViewController.swift */,
+				8D5BE643201CF36300B404A2 /* EventDelegate.swift */,
 				8D5BE612201CEBC400B404A2 /* Main.storyboard */,
+				8D5BE645201D08CA00B404A2 /* MyEvent.swift */,
 				8D5BE618201CEBC400B404A2 /* Assets.xcassets */,
 				8D5BE61A201CEBC400B404A2 /* LaunchScreen.storyboard */,
 				8D5BE61D201CEBC400B404A2 /* Info.plist */,
@@ -262,8 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D5BE611201CEBC400B404A2 /* ViewController.swift in Sources */,
+				8D5BE611201CEBC400B404A2 /* EventTableViewController.swift in Sources */,
+				8D5BE642201CEF4F00B404A2 /* AddEventViewController.swift in Sources */,
+				8D5BE644201CF36300B404A2 /* EventDelegate.swift in Sources */,
 				8D5BE60F201CEBC400B404A2 /* AppDelegate.swift in Sources */,
+				8D5BE646201D08CA00B404A2 /* MyEvent.swift in Sources */,
 				8D5BE617201CEBC400B404A2 /* BeltExam.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
